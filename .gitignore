@@ -16,8 +16,8 @@
 !/log/.keep
 /tmp
 
-# Ignore Gemfile.look
-Gemfile.look
+# Ignore Gemfile.lock
+Gemfile.lock
 
 # Ignore database.yml
 config/database.yml
