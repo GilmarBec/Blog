@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get 'home/teste'
   
   root 'home#index'
+  
+  #link
   get 'sobre' => 'home#about'
   get 'post' => 'posts#index'
 
