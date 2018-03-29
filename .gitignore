@@ -15,3 +15,12 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore Gemfile.look
+Gemfile.look
+
+# Ignore database.yml
+config/database.yml
+
+# Ignore secrets.yml
+config/secrets.yml
