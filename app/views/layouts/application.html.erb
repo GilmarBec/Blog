@@ -20,12 +20,17 @@
                     <li role="presentation">
                         <%= link_to "Sobre", sobre_path%>
                     </li>
-                    <li role="presentation">
-                        <%= link_to "post", posts_path %>
-                    </li>
+                    <% if current_user %>
+                        <li role="presentation">
+                            <%= link_to "artigo", posts_path %>
+                        </li>
+                        <li>
+                            <%= link_to current_user.email %>
+                        </li>
+                    <% end %>
                 </ul>
             </nav>  
-        <h3 class="text-muted">Blog do Dev</h3>
+            <h3 class="text-muted">Blog do Dev</h3>
         </div>
         <%= yield %>
         <footer class="footer">
